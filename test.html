@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>第三天的家庭作业</title>
+    <style type="text/css">
+    input {
+        margin-left: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>增加管理员</h1>
+    <br>
+    <form action="01_demo.html">
+        姓名:
+        <input type="text" name="username" maxlength="10" autocomplete="off">10个字符以内
+        <br>
+        <br> 密码:
+        <input type="password" name="psd" autocomplete="off">
+        <br>
+        <br>性别:
+        <input type="radio" name="sex" value="women">女士
+        <input type="radio" name="sex" value="men">男士
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td valign="center">
+                    角色:
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="jiaose[]" value="chaojiguanliyuan" checked="">超级管理员
+                    </label>
+                    <label>
+                        <br>
+                        <br>
+                        <input type="checkbox" name="jiaose[]" value="zhangdanguanliyuan">账单管理员
+                    </label>
+                </td>
+                <td style="padding-left: 70px">至少选择一个角色
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br> 头像:
+        <input type="file" name="pic">
+        <br>
+        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="" value="保存">
+        <input type="reset" name="" value="重置">
+    </form>
+</body>
+
+</html>
