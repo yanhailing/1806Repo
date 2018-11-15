@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.span1{
+			background: pink;
+		}
+
+		/*更改行内属性为块属性*/
+		.span2{
+			display: block;
+		}
+		
+		/*元素消失*/
+		.span3{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- 块元素,内联元素,行内块元素 -->
+	<!-- 1,显示特点 -->
+	<!-- 块元素独占一行 -->
+	<!-- 内联元素,行内块元素,都可以显示在一行之内 -->
+
+	<!-- 2,嵌套关系/原则 -->
+
+<!--1,内联元素,只能嵌套内联元素
+
+	2,块元素可以嵌套块元素,内联元素,行内块元素,但是p标签是个特殊的块元素,不能嵌套内联元素
+
+	3,行内块元素,一般只嵌套行内元素 -->
+
+	<!-- 演示: -->
+	<!-- 1,行内元素 -->
+
+	<!-- 行内元素嵌套行内元素 -->
+
+	<span class="span1">北<span>span上海</span>京</span>
+	<hr>
+
+	<!-- 行内元素嵌套块元素 -->
+
+	<span class="span1">北<div>div上海</div>京</span>
+	<hr>
+	<!-- 2,块元素嵌套 -->
+
+	<!-- 块元素,嵌套行内元素 -->
+	<div class="span1">北<span>span上海</span>京</div>
+	<hr>
+	
+	<!-- 块元素,嵌套块元素 -->
+
+	<div class="span1">北<div>div上海</div>京</div>
+	<hr>
+
+	<!-- p标签是块元素,但是其职能嵌套行内元素 -->
+	<!-- p标签,嵌套块元素 -->
+
+	<p class="span1">北<div>div上海</div>京</p>
+	<hr>
+
+	<!-- p标签中包含br换行 -->
+
+	<p class="span1">北<br><span>上海</span>京</p>
+	<hr>
+
+	<!-- 行内块元素的情况比较特殊 -->
+
+	<!-- 行内块元素,一般只嵌套行内元素 -->
+
+
+	<!-- 元素属性的转化 -->
+<!--通过display属性
+	属性值:	inline   	 行内元素/内联元素
+	        block    	 块元素
+	        inline-block 行内块元素
+            none         元素消失 -->
+
+	<span class="span1 span2 span3">北京</span>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
